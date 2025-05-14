@@ -1,0 +1,24 @@
+<!--PROGRAMME CONVERT CELCIUS INTO FAHRENHEIT-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        function convert() {
+            var c = document.getElementById("num").value;
+            const f = (c * 1.8) + 32;        //Formula:  Fahrenheit = celcius * 1.8 +32
+            document.getElementById('res').innerText = ` ${c}°C = ${f} Fahreheit`;       //put convert miles value into h1 tag me
+        }
+
+     </script>
+</head>
+<body>
+   <input type="number" name="value" id="num" > Celcius
+   <button onclick="convert()">CONVERT</button> fahrenheit
+   <h2 id="res"></h2>
+</body>
+</html>

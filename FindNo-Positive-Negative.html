@@ -1,0 +1,46 @@
+<!--Programme to find no is POSITIVE , NEGATIVE OR 0  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        function convert() {
+            var num = document.getElementById("num").value;
+            //By in built method ->
+            // var data = Math.sign(num);
+
+            //By user define method ->
+            if(num>0) {
+                data = `${num} is positive number`;
+            }
+            else if(num<0) {
+                data = `${num} is negative no`;
+            }
+            else if(num==0) {
+                data = `${num} is zero`
+            } 
+            else {
+                data = `${num} is not a number`;
+            }
+
+         document.getElementById('res').innerText = `${data}`;       //put convert miles value into h1 tag me
+        }
+
+     </script>
+</head>
+
+<body>
+   <input type="number" name="value" id="num" />
+   <button onclick="convert()">ChECK NO</button> 
+   <h2 id="res"></h2>
+</body>
+</html>
+
+<!--IN BUILT METHOD: if value put is Positive(ex- 7,8,55 etc) it give : 1(i.e POSITIVE) , 
+    if value put negative (ex- -8,-9) its give: -1 (i.e Negative)  -->
+
+

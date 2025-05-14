@@ -1,0 +1,25 @@
+<!--PROGRAMME CONVERT KM INTO MILES-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        function convert() {
+            var km = document.getElementById("num").value;
+            const factor=0.621371            //1km = 0.621371 miles
+            var miles = km*factor;
+            document.getElementById('res').innerText = `${miles}`;       //put convert miles value into h1 tag me
+        }
+
+     </script>
+</head>
+<body>
+   <input type="number" name="value" id="num" >Kms 
+   <button onclick="convert()">CONVERT</button> miles
+   <h2 id="res"></h2>
+</body>
+</html>

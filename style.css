@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 35px;
+    color:red;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
